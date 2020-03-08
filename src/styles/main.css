@@ -86,7 +86,7 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left bottom;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
 }
 .skills .img-container{
     display:flex;
@@ -97,7 +97,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.7rem;
+    font-size: 7vh;
 }
 
 .skills .projects-art{
@@ -135,10 +135,6 @@ position: relative;
 .skills .project-link{
     color: #BDBDBD; 
 }
-
-
-
-
 @media (max-width:480px) {
     .intro .text-title{
         font-size:13vw;
@@ -157,6 +153,7 @@ position: relative;
     }
     .skills .project{
         margin: 1rem;
+        padding: 0;
     }
     .skills{
         background-image: none;
