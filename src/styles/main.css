@@ -82,16 +82,15 @@ body{
     transition: 0.7s;
 }
 .skills{
-    background-image: url("../images/art3.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left bottom;
     padding-bottom: 1rem;
 }
 .skills .img-container{
     display:flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+.skills .project-image{
+    width: 60%
 }
 .skills .project-heading{
     display: flex;
@@ -163,8 +162,11 @@ position: relative;
         display:none;
     }
     .skills .project-heading{
-        font-size: 2.2rem;
+        font-size: 6.5vh;
         padding-top: 0.8rem;
+    }
+    .skills .project-image{
+        display: none;
     }
     .skills .card{
         margin: 0;
