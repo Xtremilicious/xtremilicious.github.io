@@ -1,179 +1,183 @@
-:root{
-    --mainDark: #2E2E2E;
-    --mainLight: #FAFAFA;
-    --mainDark2: #585858;
+:root {
+  --mainDark: #2e2e2e;
+  --mainLight: #fafafa;
+  --mainDark2: #585858;
 }
 
-body{
-    color: var(--mainDark);
-    background: var(--mainLight);
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+body {
+  color: var(--mainDark);
+  background: var(--mainLight);
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
-.navbar-nd{
-    height: 13vh;
+.navbar-nd {
+  height: 13vh;
 }
-.navbar-nd a{
-    color: var(--mainDark2);
-    font-size: 1.6rem;
+.navbar-nd a {
+  color: var(--mainDark2);
+  font-size: 1.6rem;
 }
-.navbar-nd a i{
-    font-size: 6vh;
+.navbar-nd a i {
+  font-size: 6vh;
 }
-.intro{
-    height: 87vh;
+.intro {
+  height: 87vh;
 }
-.intro .text-title{
-    font-size:10vh;
+.intro .text-title {
+  font-size: 10vh;
 }
-.intro .text-subtitle{
-    font-size:4vh;
-    color: var(--mainDark2);
+.intro .text-subtitle {
+  font-size: 4vh;
+  color: var(--mainDark2);
+  margin-bottom: 3vh;
 }
-.intro .resume{
-    display: flex;
-    text-decoration: none;
-    justify-content: center;
+.intro .resume {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
 }
-.intro .resume-btn{
+.intro .resume-btn {
+  border: 1px solid var(--mainDark);
+  border-radius: 1.5vh;
+  padding: 1.5vh 1.8vh;
+  text-decoration: none;
+  color: var(--mainDark);
+  background: transparent;
+  font-size: 3.4vh;
+  outline: none;
+  transition: 0.4s ease-in-out;
+}
+.intro .resume-btn:hover {
+  color: var(--mainLight);
+  background: var(--mainDark);
+}
+.art {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+.art-bg {
+  width: 50vw;
+}
+.fa-linkedin:hover {
+  color: #4875b4;
+  transition: 0.7s;
+}
+.fa-github:hover {
+  color: var(--mainDark);
+  transition: 0.7s;
+}
+.fa-hackerrank:hover {
+  color: #22b254;
+  transition: 0.7s;
+}
+.fa-twitter:hover {
+  color: #38a1f3;
+  transition: 0.7s;
+}
+.fa-envelope:hover {
+  color: #c54441;
+  transition: 0.7s;
+}
+.skills {
+  padding-bottom: 1rem;
+}
+.skills .img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.skills .project-image {
+  width: 60%;
+}
+.skills .project-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7vh;
+}
+
+.skills .projects-art {
+  overflow: visible;
+}
+.skills .card {
+  border-radius: 0.3rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 7px;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: rgba(0, 0, 0, 0.04) !important;
+  border-image: initial !important;
+  color: var(--mainDark2);
+  margin: 0.7rem;
+}
+.skills .code {
+  position: absolute;
+  right: 1rem;
+  top: 0.35rem;
+}
+.skills .card:hover .project-title {
+  color: var(--mainDark);
+  transition: 0.4s;
+}
+.skills .card .project-link:hover {
+  color: var(--mainDark);
+  text-decoration: none;
+}
+.skills .card-img-top {
+  padding: 0.4rem 0.4rem 0 0.4rem;
+  border-radius: 0.7rem 0.7rem 0 0;
+}
+.skills .card-title {
+  font-size: 1.3rem;
+  padding: 0.2rem;
+  position: relative;
+}
+.skills .project-link {
+  color: #bdbdbd;
+  transition: 0.4s;
+}
+@media (max-width: 480px) {
+  .intro .text-title {
+    font-size: 13vw;
+  }
+  .intro .text-subtitle {
+    font-size: 6vw;
+  }
+  .intro .resume-btn {
     border: 1px solid var(--mainDark);
-    border-radius: 1.5vh;
-    padding: 1.7vh;
-    text-decoration: none;
-    color: var(--mainDark);
-    background: transparent;
-    font-size: 3.4vh;
-    outline: none;
-}
-.intro .resume-btn:hover{
-    color: var(--mainLight);
-    background: var(--mainDark);
-    transition: 0.2s ease-in;
-}
-.art{
-    display:flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
-}
-.art-bg{
-    width: 45vw;
-}
-
-.fa-linkedin:hover{
-    color: #4875B4;
-    transition: 0.7s;
-}
-.fa-github:hover{
-    color: var(--mainDark);
-    transition: 0.7s;
-}
-.fa-hackerrank:hover{
-    color: #22b254;
-    transition: 0.7s;
-}
-.fa-twitter:hover{
-    color: #38A1F3;
-    transition: 0.7s;
-}
-.fa-envelope:hover{
-    color: #c54441;
-    transition: 0.7s;
-}
-.skills{
+    border-radius: 2vw;
+    padding: 1.5vw 2.6vw;
+    font-size: 7vw;
+  }
+  .art-bg {
+    width: 95vw;
+  }
+  .skills .project {
+    margin: 1rem;
+    padding: 0;
+  }
+  .skills {
+    background-image: none;
     padding-bottom: 1rem;
+  }
+  .skills emp {
+    display: none;
+  }
+  .skills .project-heading {
+    font-size: 6.5vh;
+    padding-top: 1.2rem;
+  }
+  .skills .project-image {
+    display: none;
+  }
+  .skills .card {
+    margin: 0;
+  }
 }
-.skills .img-container{
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-.skills .project-image{
-    width: 60%
-}
-.skills .project-heading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 7vh;
-}
-
-.skills .projects-art{
-    overflow: visible;
-}
-.skills .card{
-    border-radius: 0.3rem;   
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2); 
-    color: var(--mainDark2);
-    margin: 0.7rem;
-}
-.skills .code{
-    position: absolute;
-    right: 1rem;
-    top:0.35rem;
-}
-.skills .card:hover .project-title{
-    color: var(--mainDark);
-    transition: 0.7s;
-}
-.skills .card .project-link:hover{
-    color: var(--mainDark);
-    transition: 0.7s;
-    text-decoration: none;
-}
-.skills .card-img-top{
-    padding:0.4rem 0.4rem 0 0.4rem;
-    border-radius: 0.7rem 0.7rem 0 0;
-}
-.skills .card-title{
-font-size: 1.3rem;
-padding:0.2rem;
-position: relative;
-}
-.skills .project-link{
-    color: #BDBDBD; 
-}
-@media (max-width:480px) {
-    .intro .text-title{
-        font-size:13vw;
-    }
-    .intro .text-subtitle{
-        font-size:6vw;
-    }
-    .intro .resume-btn{
-        border: 1px solid var(--mainDark);
-        border-radius: 2vw;
-        padding: 1.5vw;
-        font-size: 7vw;
-    }
-    .art-bg{
-        width: 95vw;
-    }
-    .skills .project{
-        margin: 1rem;
-        padding: 0;
-    }
-    .skills{
-        background-image: none;
-        padding-bottom: 1rem;
-    }
-    .skills emp{
-        display:none;
-    }
-    .skills .project-heading{
-        font-size: 6.5vh;
-        padding-top: 1.2rem;
-    }
-    .skills .project-image{
-        display: none;
-    }
-    .skills .card{
-        margin: 0;
-    }
-}
-@media (min-width:481px){
-    .skills{
-        height: 100vh;
-    }
+@media (min-width: 481px) {
+  .skills {
+    height: 100vh;
+  }
 }
